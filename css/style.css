@@ -1,0 +1,268 @@
+*
+{
+          padding: 0px;
+          margin: 0px;
+          box-sizing: border-box;
+}
+.home
+{
+          background-image: url(../images/bg1.jpg);
+          background-position: center center;
+          background-size: cover;
+          height: 100vh;
+          position: relative;
+          overflow: hidden !important;
+         
+}
+.homecaption
+{
+          position: absolute;
+          top: 30%;
+          left: 10%;
+}
+.homelink
+{
+          text-decoration: none !important;
+}
+.hcaption
+{
+          font-weight: 900;
+          font-size: 3rem;
+}
+.icons
+{
+          position: absolute;
+          bottom: 2%;
+          left: 2%;
+}
+.icon
+{
+          margin: 0.3rem;
+          border-radius: 50%;
+          padding: 5px 7px;
+          border: 1.5px solid #777;
+}
+.icon2
+{
+          padding: 5px 8px !important;
+}
+.icon:hover
+{
+          border: 1.5px solid #fff;
+}
+.icon1
+{
+          padding: 5px 10px !important;
+}
+.anmations
+{
+          display: flex;
+          justify-content: center;
+         
+}
+.navbar
+{
+          background-color: black !important;
+}
+.anmat
+{
+          width: 1.5rem;
+          height: 2.3rem;
+          border: 1px solid #777;
+          border-radius: 24px;
+          position: absolute;
+          bottom: 2%;         
+}
+.anmationimg
+{
+          position: relative;
+          top: -10%;
+          left: 46%;
+          animation-name: movanmation;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          overflow: hidden !important;
+         
+}
+@keyframes movanmation
+{
+          from{top: -10%;}
+          to{top: 55%; }
+}
+
+/*////////////////////////////////////// END SETION HOME ///////////////////////////////////////////*/
+#about
+{
+          background-image: url(../images/dots.png);
+          padding-bottom: 3rem;
+}
+.titel h2
+{
+          font-size: 5rem;
+          font-weight: 900;
+          color: #f1f1f1;
+          
+}
+.titel h3
+{
+          font-size: 3rem;
+          font-weight: bold;
+          margin-top: 1.5rem;
+          color: black;
+}
+.prg2
+{
+          color: #777;
+}
+.divitin2
+{
+          display: flex;
+          align-items: center;
+}
+.plink
+{
+          text-decoration: underline;
+          cursor: pointer;
+}
+.divitin1
+{
+    box-shadow: 0 10px 30px rgb(0 0 0 / 25%);
+           padding: 0px !important;
+}
+@media screen and (max-width:991px) and (min-width:767px) 
+{
+    .divitin2
+    {
+        margin-top: 40px !important;
+        
+    }
+}
+@media screen and (max-width:766px) and (min-width:300px) 
+{
+    .divitin2
+    {
+        margin-top: 40px !important;
+    }
+}
+@media screen and (max-width:575px) and (min-width:300px) 
+{
+   .divitin1
+    {
+        margin: 0px 20px !important;
+        
+    }
+}
+/*////////////////////////////////////// END SETION ABOUT ///////////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////// END SETION MYSKILL ///////////////////////////////////////////*/
+#service
+{
+          background-image: url(../images/dark_dot.jpg);
+          padding: 2rem;
+
+}
+.divicon i
+{
+    bottom: 91%;
+    left:43%;
+    transition: color 1s;
+    
+}
+@media screen and (max-width:1200px) and (min-width:992px)
+{
+    .divicon i
+    {
+        bottom: 91% !important;
+        left: 42% !important;
+       
+    }
+}
+@media screen and (max-width:766px) and (min-width:547px)
+{
+    .divicon i
+    {
+        bottom: 91% !important;
+        left: 45% !important;
+       
+    }
+}
+.serv-item .lien 
+{
+    width: 35px;
+    height: 3px;
+    background-color: #dc3545;
+    transition: width 1s;
+}
+.serv-item:hover .divicon i
+{
+    color: #dc3545 !important;
+
+}
+.serv-item:hover .lien
+{
+    width: 60px;
+}
+/*////////////////////////////////////// END SETION SERVICE ///////////////////////////////////////////*/
+#portfolio
+{
+    background-image: url(../images/dots.png);
+    padding: 3rem;
+}
+.linksprot a
+{
+    text-decoration: none !important;
+    font-size: 1.5rem;
+}
+.sbh
+{
+    color: black !important;
+}
+.sbh:hover
+{
+    color: #dc3545 !important;
+}
+.itemprot
+{
+    position: relative;
+    overflow: hidden;
+}
+.layar
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 120%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#fff;
+    opacity: 0;
+    transition: all 1s;
+}
+.item-icon
+{
+    background-color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    transition: color 1s;
+
+}
+.itemprot img
+{
+    transition: all 1s;
+}
+
+.itemprot:hover .layar
+{
+    bottom: 0;
+    opacity: 0.9;
+}
+
+.item-icon:hover .ico
+{
+    color: #dc3545 !important;
+}
